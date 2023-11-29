@@ -4,7 +4,7 @@ import { hideBin } from "yargs/helpers";
 
 export const simpleParser = yargs(hideBin(process.argv))
   .command(
-    "$0",
+    "$0", // cmd string; "$0" when no additional command should be given
     "echos a given string",
     () => {},
     (argv) => {
